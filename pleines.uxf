@@ -1,18 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.3.0">
-  <zoom_level>8</zoom_level>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>568</x>
-      <y>392</y>
-      <w>224</w>
-      <h>272</h>
-    </coordinates>
-    <panel_attributes>Pigeon
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>440</x><y>370</y><w>280</w><h>340</h></coordinates><panel_attributes>Pigeon
 --
 - gender: boolean
-- birthdate: Date TEST
+- birthdate: Date 
 - propertyRingNumber: String
 - chipRingNumber: String
 - currentLatitude: double
@@ -27,18 +16,7 @@
 + getDistance()
 + getFlyingtime
 + addChipRingNumber()
-&lt;&lt;constuctor &gt;&gt; creatPropertyRingNumber()</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>216</x>
-      <y>392</y>
-      <w>248</w>
-      <h>240</h>
-    </coordinates>
-    <panel_attributes>ClubMember
+&lt;&lt;constuctor &gt;&gt; creatPropertyRingNumber()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>370</y><w>310</w><h>300</h></coordinates><panel_attributes>ClubMember
 --
 - memberId: int
 - memberName: String
@@ -56,32 +34,10 @@
 + addPigeons(:List)
 @overload
 + addPigeons(:Pigeon)
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>456</x>
-      <y>448</y>
-      <w>128</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>containts Pigeons
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>440</y><w>160</w><h>50</h></coordinates><panel_attributes>containts Pigeons
 lt=-
 m1=1
-m2=1..*</panel_attributes>
-    <additional_attributes>10.0;20.0;140.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>288</x>
-      <y>96</y>
-      <w>168</w>
-      <h>152</h>
-    </coordinates>
-    <panel_attributes>Administrator
+m2=1..*</panel_attributes><additional_attributes>10;20;140;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>0</y><w>210</w><h>190</h></coordinates><panel_attributes>Administrator
 --
 - clubName: String
 - clubMembers: Array
@@ -92,31 +48,9 @@ m2=1..*</panel_attributes>
 + addMember()
 + updateMember()
 + deleteMember()
-+ isCupExpired()</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>360</x>
-      <y>240</y>
-      <w>40</w>
-      <h>168</h>
-    </coordinates>
-    <panel_attributes>lt=-
++ isCupExpired()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>180</y><w>50</w><h>210</h></coordinates><panel_attributes>lt=-
 m1=1
-m2=1..*</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;190.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>568</x>
-      <y>96</y>
-      <w>192</w>
-      <h>216</h>
-    </coordinates>
-    <panel_attributes>Contest
+m2=1..*</panel_attributes><additional_attributes>10;10;10;190</additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>0</y><w>240</w><h>270</h></coordinates><panel_attributes>Contest
 --
 - contestStartDate: Date
 - contestEndDate: Date
@@ -137,81 +71,15 @@ m2=1..*</panel_attributes>
 + addPigeons()
 + checkIfAgeAloud(pideon.getAge())
 
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>808</x>
-      <y>616</y>
-      <w>232</w>
-      <h>48</h>
-    </coordinates>
-    <panel_attributes>Note..
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>740</x><y>650</y><w>290</w><h>60</h></coordinates><panel_attributes>Note..
 eigendomsring:
-LANDAFKORTING – JAARTAL – NUMMER</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>448</x>
-      <y>160</y>
-      <w>136</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes>lt=-
+LANDAFKORTING – JAARTAL – NUMMER</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>80</y><w>170</w><h>40</h></coordinates><panel_attributes>lt=-
 m1=1
-m2=1..5</panel_attributes>
-    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>312</x>
-      <y>1424</y>
-      <w>168</w>
-      <h>152</h>
-    </coordinates>
-    <panel_attributes>
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1848</x>
-      <y>280</y>
-      <w>168</w>
-      <h>152</h>
-    </coordinates>
-    <panel_attributes>
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>640</x>
-      <y>304</y>
-      <w>40</w>
-      <h>104</h>
-    </coordinates>
-    <panel_attributes>lt=-
+m2=1..5</panel_attributes><additional_attributes>10;10;150;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>1660</y><w>210</w><h>190</h></coordinates><panel_attributes>
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2040</x><y>230</y><w>210</w><h>190</h></coordinates><panel_attributes>
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>260</y><w>50</w><h>130</h></coordinates><panel_attributes>lt=-
 m1=1
-m2=2..*</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>776</x>
-      <y>96</y>
-      <w>128</w>
-      <h>88</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+m2=2..*</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>700</x><y>0</y><w>160</w><h>110</h></coordinates><panel_attributes>&lt;&lt;enumeration&gt;&gt;
 ContestType
 --
 Midfond
@@ -220,7 +88,4 @@ MarathonFlight
 youngPigeonsFlight
 
 
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-</diagram>
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
