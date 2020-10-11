@@ -12,7 +12,7 @@
     <panel_attributes>Pigeon
 --
 - gender: boolean
-- birthdate: Date 
+- birthdate: Date TEST
 - propertyRingNumber: String
 - chipRingNumber: String
 - currentLatitude: double
