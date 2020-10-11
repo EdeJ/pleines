@@ -39,7 +39,7 @@ lt=-
 m1=1
 m2=1..*</panel_attributes><additional_attributes>10;20;140;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>0</y><w>210</w><h>190</h></coordinates><panel_attributes>Administrator
 --
-- clubName: String TEST TES TEST
+- clubName: String TEST TESTING 123
 - clubMembers: Array
 - currentCupHolder: Member.id
 - cupHolderStartDate: Date
