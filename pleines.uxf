@@ -1,7 +1,7 @@
 <diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>440</x><y>370</y><w>280</w><h>340</h></coordinates><panel_attributes>Pigeon
 --
 - gender: boolean
-- birthdate: Date 
+- birthdate: Date TEST
 - propertyRingNumber: String
 - chipRingNumber: String
 - currentLatitude: double
