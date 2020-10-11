@@ -52,7 +52,7 @@ m2=1..*</panel_attributes><additional_attributes>10;20;140;20</additional_attrib
 m1=1
 m2=1..*</panel_attributes><additional_attributes>10;10;10;190</additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>0</y><w>240</w><h>270</h></coordinates><panel_attributes>Contest
 --
-- contestStartDate: Date
+- contestStartDate: Date TEST
 - contestEndDate: Date
 - contestSeason: String
 - contestName: String
