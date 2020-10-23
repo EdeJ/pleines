@@ -13,7 +13,7 @@ public class Main {
 
         // maak een nieuwe duif
         // Geef een geboorte datum mee aan de constructor. 1 jaar en 1 dag oud.
-        Pigeon pigeon2 = new Pigeon(2019, 10, 22);
+        Pigeon pigeon2 = new Pigeon(2019, 10, 22); // year, month, dayOfMonth
         System.out.println(pigeon2);
         System.out.println("Is deze duif ouder dan een jaar? : " + pigeon2.isAllowedToContest());
 
