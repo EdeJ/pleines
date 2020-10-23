@@ -27,7 +27,7 @@ public class Location {
     public String toString() {
         return "Location { " +
                 "latitude = " + latitude +
-                ", longtitude = " + longitude +
+                ", longitude = " + longitude +
                 '}';
     }
 }
