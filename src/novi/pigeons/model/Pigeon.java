@@ -53,7 +53,7 @@ public class Pigeon {
         return "Pigeon { " +
                 "birthDate = " + birthDate +
                 ", ringNumber = '" + ringNumber + '\'' +
-//                ", chipRing=" + chipRing +
+                ", chipRing=" + chipRing +
                 '}';
     }
 }

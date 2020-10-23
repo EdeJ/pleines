@@ -23,10 +23,10 @@ public class Main {
 
         // Maak een chipRing en voeg de start- en aankomstlocatie toe.
         ChipRing chipRing = new ChipRing(releaseLocation, arrivalLocation);
-        System.out.println(chipRing);
 
         // Voeg de ChipRing toe aan een duif
         pigeon2.setChipRing(chipRing);
+        System.out.println(pigeon2);
 
         // Haal de gevlogen afstand uit de chipring van de duif
         double distance = pigeon2.getChipRing().getDistance();
