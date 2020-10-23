@@ -1,13 +1,12 @@
 import novi.pigeons.model.ChipRing;
 import novi.pigeons.model.Location;
 import novi.pigeons.model.Pigeon;
-import novi.pigeons.service.DistanceCalculator;
 
 public class Main {
     public static void main(String[] args) {
 
         // maak een duif met een lege constructor
-        // de geboortedatum wordt dan de datum van vandaag.
+        // Bij een lege constructor wordt de geboortedatum automatisch de datum van vandaag.
         Pigeon pigeon1 = new Pigeon();
         System.out.println(pigeon1);
         System.out.println("Is deze duif ouder dan een jaar? : " + pigeon1.isAllowedToContest());
@@ -22,17 +21,18 @@ public class Main {
         Location releaseLocation = new Location("Brussel", 50.8503463, 4.3517211);
         Location arrivalLocation = new Location("Utrecht", 52.0907374, 5.1214201);
 
-        // Maak een chipRing met de start en aankomstlocatie
+        // Maak een chipRing en voeg de start- en aankomstlocatie toe.
         ChipRing chipRing = new ChipRing(releaseLocation, arrivalLocation);
         System.out.println(chipRing);
 
-        // Bereken de afstand tussen twee locaties.
-        DistanceCalculator distanceCalculator = new DistanceCalculator();
-        double distance = distanceCalculator.distance(releaseLocation.getLatitude(),
-                releaseLocation.getLongitude(),
-                arrivalLocation.getLatitude(),
-                arrivalLocation.getLongitude(), "K");
-        System.out.println("Afstand tussen Brussel en Utrecht is: " + (Math.round(distance *100.0) / 100.0) + " Kilometers\n");
+        // Voeg de ChipRing toe aan een duif
+        pigeon2.setChipRing(chipRing);
+
+        // Haal de gevlogen afstand uit de chipring van de duif
+        double distance = pigeon2.getChipRing().getDistance();
+
+        // print de gevlogen afstand (afgerond op 2 decimalen)
+        System.out.println("Afstand tussen Brussel en Utrecht is: " + (Math.round(distance * 100.0) / 100.0) + " Kilometers\n");
 
     }
 }
