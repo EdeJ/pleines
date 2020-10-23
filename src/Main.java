@@ -32,7 +32,7 @@ public class Main {
         double distance = pigeon2.getChipRing().getDistance();
 
         // print de gevlogen afstand (afgerond op 2 decimalen)
-        System.out.println("Afstand tussen Brussel en Utrecht is: " + (Math.round(distance * 100.0) / 100.0) + " Kilometers\n");
+        System.out.println("De gevlogen afstand (Brussel -> Utrecht) is: " + (Math.round(distance * 100.0) / 100.0) + " Kilometers\n");
 
     }
 }
